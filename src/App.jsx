@@ -1,4 +1,3 @@
-// App.jsx
 import "./App.css";
 import TableResults from "./components/TableResults/TableResults.jsx";
 import { useState, useEffect } from "react";
