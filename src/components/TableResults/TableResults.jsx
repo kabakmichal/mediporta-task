@@ -31,8 +31,8 @@ const TableResults = ({ data, elementsPerPage, setElementsPerPage }) => {
       if (config.key === "id") {
         return config.direction === "ascending" ? a.id - b.id : b.id - a.id;
       } else if (config.key === "tag") {
-        const tagA = a.name || ""; // Używamy a.name zamiast a.tag
-        const tagB = b.name || ""; // Używamy b.name zamiast b.tag
+        const tagA = a.name || "";
+        const tagB = b.name || "";
         return config.direction === "ascending"
           ? tagA.localeCompare(tagB)
           : tagB.localeCompare(tagA);
